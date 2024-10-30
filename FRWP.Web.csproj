@@ -1,0 +1,78 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Remove="FRWP.APIGateWay\**" />
+      <Compile Remove="FRWP.Hoster\**" />
+      <Compile Remove="FRWP.Infrastructure\**" />
+      <Compile Update="FRWP.PlatformHoster\Program.cs">
+        <Link>AppHost1\Program.cs</Link>
+      </Compile>
+      <Compile Remove="FRWP.PlatformHoster\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="FRWP.APIGateWay\**" />
+      <EmbeddedResource Remove="FRWP.Hoster\**" />
+      <EmbeddedResource Remove="FRWP.Infrastructure\**" />
+      <EmbeddedResource Remove="FRWP.PlatformHoster\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Remove="FRWP.APIGateWay\**" />
+      <Content Remove="FRWP.Hoster\**" />
+      <Content Remove="FRWP.Infrastructure\**" />
+      <Content Update="FRWP.PlatformHoster\Properties\launchSettings.json">
+        <Link>AppHost1\Properties\launchSettings.json</Link>
+      </Content>
+      <Content Update="FRWP.PlatformHoster\appsettings.json">
+        <Link>AppHost1\appsettings.json</Link>
+      </Content>
+      <Content Update="FRWP.PlatformHoster\appsettings.Development.json">
+        <Link>AppHost1\appsettings.Development.json</Link>
+      </Content>
+      <Content Remove="FRWP.PlatformHoster\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="FRWP.APIGateWay\**" />
+      <None Remove="FRWP.Hoster\**" />
+      <None Remove="FRWP.Infrastructure\**" />
+      <None Remove="FRWP.PlatformHoster\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="FRWP.APIGateWay\appsettings.Development.json" />
+      <_ContentIncludedByDefault Remove="FRWP.APIGateWay\appsettings.json" />
+      <_ContentIncludedByDefault Remove="FRWP.APIGateWay\obj\FRWP.APIGateWay.csproj.nuget.dgspec.json" />
+      <_ContentIncludedByDefault Remove="FRWP.APIGateWay\obj\project.assets.json" />
+      <_ContentIncludedByDefault Remove="FRWP.APIGateWay\obj\project.packagespec.json" />
+      <_ContentIncludedByDefault Remove="FRWP.APIGateWay\Properties\launchSettings.json" />
+      <_ContentIncludedByDefault Remove="FRWP.Hoster\appsettings.Development.json" />
+      <_ContentIncludedByDefault Remove="FRWP.Hoster\appsettings.json" />
+      <_ContentIncludedByDefault Remove="FRWP.Hoster\obj\FRWP.Hoster.csproj.nuget.dgspec.json" />
+      <_ContentIncludedByDefault Remove="FRWP.Hoster\obj\project.assets.json" />
+      <_ContentIncludedByDefault Remove="FRWP.Hoster\obj\project.packagespec.json" />
+      <_ContentIncludedByDefault Remove="FRWP.Hoster\Properties\launchSettings.json" />
+      <_ContentIncludedByDefault Remove="FRWP.Infrastructure\appsettings.Development.json" />
+      <_ContentIncludedByDefault Remove="FRWP.Infrastructure\appsettings.json" />
+      <_ContentIncludedByDefault Remove="FRWP.Infrastructure\obj\FRWP.Hoster.csproj.nuget.dgspec.json" />
+      <_ContentIncludedByDefault Remove="FRWP.Infrastructure\obj\FRWP.Infrastructure.csproj.nuget.dgspec.json" />
+      <_ContentIncludedByDefault Remove="FRWP.Infrastructure\obj\project.assets.json" />
+      <_ContentIncludedByDefault Remove="FRWP.Infrastructure\obj\project.packagespec.json" />
+      <_ContentIncludedByDefault Remove="FRWP.Infrastructure\Properties\launchSettings.json" />
+      <_ContentIncludedByDefault Remove="FRWP.PlatformHoster\appsettings.Development.json" />
+      <_ContentIncludedByDefault Remove="FRWP.PlatformHoster\appsettings.json" />
+      <_ContentIncludedByDefault Remove="FRWP.PlatformHoster\obj\AppHost1.csproj.nuget.dgspec.json" />
+      <_ContentIncludedByDefault Remove="FRWP.PlatformHoster\obj\FRWP.PlatformHoster.csproj.nuget.dgspec.json" />
+      <_ContentIncludedByDefault Remove="FRWP.PlatformHoster\obj\project.assets.json" />
+      <_ContentIncludedByDefault Remove="FRWP.PlatformHoster\obj\project.packagespec.json" />
+      <_ContentIncludedByDefault Remove="FRWP.PlatformHoster\Properties\launchSettings.json" />
+    </ItemGroup>
+
+</Project>

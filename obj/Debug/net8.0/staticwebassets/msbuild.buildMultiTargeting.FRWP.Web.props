@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\FRWP.Web.props" />
+</Project>

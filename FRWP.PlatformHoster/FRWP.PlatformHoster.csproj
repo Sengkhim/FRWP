@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <IsAspireHost>true</IsAspireHost>
+        <UserSecretsId>8778C1BB-761A-43B6-934C-B94F3BC963C8</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Aspire.Hosting.AppHost" Version="8.0.0"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\FRWP.APIGateWay\FRWP.APIGateWay.csproj" />
+      <ProjectReference Include="..\FRWP.Infrastructure\FRWP.Infrastructure.csproj" />
+      <ProjectReference Include="..\FRWP.Web.csproj" />
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,6 @@
+@FRWP.Hoster_HostAddress = http://localhost:5271
+
+GET {{FRWP.Hoster_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

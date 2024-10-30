@@ -1,0 +1,6 @@
+@FRWP.APIGateWay_HostAddress = http://localhost:5277
+
+GET {{FRWP.APIGateWay_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

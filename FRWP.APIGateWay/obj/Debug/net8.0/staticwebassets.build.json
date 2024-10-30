@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "24hce7EjsbCkhsyHb2bh+6p1lccF9VXeyiDf42WcYxA=",
+  "Source": "FRWP.APIGateWay",
+  "BasePath": "_content/FRWP.APIGateWay",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "0cxda6XjX43H7FTdcelpoiipkmdrlsu5VZwZcDjN6mk=",
+  "Source": "FRWP.Infrastructure",
+  "BasePath": "_content/FRWP.Infrastructure",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

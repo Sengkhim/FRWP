@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\FRWP.APIGateWay.props" />
+</Project>
